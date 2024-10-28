@@ -358,7 +358,7 @@ const myTable = document.querySelector('.dashboard tbody');
 
 for (const person of people) {
   const sexPerson = person.sex === 'm' ? 'Male' : 'Female';
-  const centuri = Math.ceil(person.died / 100);
+  const century = Math.ceil(person.died / 100);
 
   myTable.insertAdjacentHTML(
     'beforeend',
@@ -368,7 +368,7 @@ for (const person of people) {
       <td>${person.born}</td>
       <td>${person.died}</td>
       <td>${person.died - person.born}</td>
-      <td>${centuri}</td>
+      <td>${century}</td>
     </tr>`,
   );
 }
